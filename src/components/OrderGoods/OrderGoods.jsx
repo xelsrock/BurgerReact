@@ -1,22 +1,22 @@
 import { Count } from "../Count/Count";
 import classes from './OrderGoods.module.css'
 
-export const OredrGoods = () => {
+export const OrderGoods = () => {
   return (
-    <li className="order__item">
-      <img className="order__image" src="img/burger_1.jpg" alt="Супер сырный"/>
+    <li className={classes.item}>
+      <img className={classes.image} src="img/burger_1.jpg" alt="Супер сырный"/>
 
-      <div className="goods">
-        <h3 className="goods__title">Супер сырный</h3>
+      <div className={classes.goods}>
+        <h3 className={classes.title}>Супер сырный</h3>
 
-        <p className="goods__weight">512г</p>
+        <p className={classes.weight}>512г</p>
 
-        <p className="goods__price">1279
+        <p className={classes.price}>1279
           <span className="currency">₽</span>
         </p>
       </div>
 
-     <Count/>
+     <Count count={1}/>
     </li>
   );
 }

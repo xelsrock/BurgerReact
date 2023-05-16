@@ -1,11 +1,11 @@
 import classes from './Count.module.css'
 
-export const Count = () => {
+export const Count = (props) => {
   return (
-    <div className="count">
-      <button className="count__minus">-</button>
-      <p className="count__amount">1</p>
-      <button className="count__plus">+</button>
+    <div className={classes.count}>
+      <button className={classes.minus}>-</button>
+      <p className={classes.amount}>{props.count}</p>
+      <button className={classes.plus}>+</button>
     </div>
   )
 }
