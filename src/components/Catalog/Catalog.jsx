@@ -25,6 +25,8 @@ export const Catalog = () => {
 
         <div className={classes.wrapper}>
           <h2 className={classes.title}>{category[activeCategory]?.rus}</h2>
+      
+          {!products.length ? <h2>Товара нет в наличии</h2> : '' }
 
           <div className={classes.wrap_list}>
             <ul className={classes.list}>
