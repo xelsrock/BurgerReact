@@ -12,7 +12,7 @@ export const CatalogProduct = ({ item }) => {
       <img src={`${API_URL}/${item.image}`} alt={item.title} className={classes.image}/>
 
       <p className={classes.price}>
-        {item.price}<span className="currency">₽</span>
+        {item.price}<span className="currency">&nbsp;₽</span>
       </p>
 
       <h3 className={classes.title}>
